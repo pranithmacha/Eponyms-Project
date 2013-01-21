@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for eponym in eponyms %}
+      <p>{{ eponym.name }}</p>
+      <p>{{ eponym.subject_name }}</p>
+      <p>{{ eponym.description }}</p>
+      <p>
+        {{ eponym.created_at.strftime('%H:%M %Y-%m-%d') }}
+      </p>
+    {% endfor %}
+{% endblock %}

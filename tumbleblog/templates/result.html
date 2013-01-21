@@ -1,0 +1,13 @@
+
+{% extends "basepage.html" %}
+
+{% block baseclass %}
+               
+<script src="{{ url_for('static', filename='js/bootstrap.js')}}"/></script>
+the subject name is :<h1>{{subject_name}}</h1></br></br>
+the eponym name is :<h1>{{eponym_name}}</h1>
+ 
+</section>
+<section class="col2 pad_left1"><img src="{{ url_for('static', filename='images/medical.png')}}" width="100%" height="100%" alt="george gibson">
+
+{% endblock %}
